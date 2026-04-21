@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@theme {
+  /* Substitui a fonte padrão do sistema pela Inter */
+  --font-sans: "Inter", sans-serif;
+  
+  /* Cria a classe font-poppins para você usar nos títulos */
+  --font-poppins: "Poppins", sans-serif;
+}
