@@ -6,3 +6,7 @@
   /* Cria a classe font-poppins para você usar nos títulos */
   --font-poppins: "Poppins", sans-serif;
 }
+html, body {
+  overflow-x: hidden; /* Proíbe terminantemente a rolagem horizontal na página inteira */
+  width: 100%;
+}

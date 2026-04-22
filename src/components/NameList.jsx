@@ -13,13 +13,13 @@ export function NameList({ handleScreen, handleNameList, nameList}) {
   }
   
   return (
-    <div className="flex flex-col flex-1 p-4 justify-around items-center  border border-gray-200 bg-white rounded-xl shadow-xl ">
-      <h2 className="text-3xl text-center text-slate-900 max-w-62.5 leading-normal mt-4">
+    <div className="flex flex-col flex-1 gap-4 w-[90vw] p-4 justify-around items-center border border-gray-200 bg-white rounded-xl shadow-xl ">
+      <h2 className="text-3xl text-center text-slate-900 leading-normal mt-4">
         Dê um nome para sua lista
       </h2>
       <form className="flex flex-col gap-2 bg-white">
         <label htmlFor="nomeLista" className="text-2xl text-slate-900">nome da lista:</label>
-        <input onChange={handleName} id="nomeLista" type="text" placeholder="Ex: Compra do Mês" className="border px-2 text-2xl bg-amber-50" />
+        <input onChange={handleName} id="nomeLista" type="text" placeholder="Ex: Compra do Mês" className="w-full border px-2 text-2xl bg-amber-50" />
       </form>
       <div className="flex gap-4 bg-white">
         <Button innerText="Confirmar" handleClick={nameList && handleClickConfirm} color={'bg-green-600'} active={'active:bg-green-700'} hover={'hover:bg-green-700'} />

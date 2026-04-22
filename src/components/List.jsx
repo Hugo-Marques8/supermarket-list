@@ -1,7 +1,18 @@
 import { ShoppingCartIcon} from '@heroicons/react/24/outline';
 import { Button } from './button';
+import { useState } from 'react';
 
 export function List({ nameList, handleScreen, list, screenList, setScreenList}) {
+  const [click, setClick] = useState(false)
+  let color = 'text-blue-600'
+  function handleClickCart() {
+    if(!click) {
+      setClick(true)
+      color = 'text-green-600'
+      console.log(click)
+      console.log(color)
+    }
+  }
   function handleClickReturn() {
     setScreenList(1)
      if(screenList === 1) {
@@ -22,7 +33,7 @@ export function List({ nameList, handleScreen, list, screenList, setScreenList})
                     return (
                      <li key={index} className="flex items-center justify-between gap-4"> 
                        <span className="px-2 border border-slate-300 bg-white text-slate-600 text-3xl text-center rounded-xl leading-normal" >{item}</span>
-                       <button className="bg-blue-50 text-xl p-3 text-blue-600 rounded-xl" title='carrinho'><ShoppingCartIcon className='w-9 h-9'/></button>
+                       <button onClick={handleClickCart} className={`bg-blue-50 text-xl p-3 ${color} rounded-xl`} title='carrinho'><ShoppingCartIcon className='w-9 h-9'/></button>
                      </li>
                     )
                 })}

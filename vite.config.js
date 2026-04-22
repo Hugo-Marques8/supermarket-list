@@ -10,4 +10,5 @@ export default defineConfig({
     babel({ presets: [reactCompilerPreset()] }),
     tailwindcss() // 2. Adicione o plugin do Tailwind aqui na lista
   ],
+  base: "/supermarket-list/"
 })

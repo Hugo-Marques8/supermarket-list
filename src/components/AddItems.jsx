@@ -58,9 +58,9 @@ export function AddItems( {handleScreen, handleNameList, nameList, handleCategor
     }
   }
   return (
-    <section className="flex flex-col p-4 gap-10 items-center border border-gray-200 rounded-xl bg-white shadow-xl">
+    <section className="flex flex-col w-[90vw] p-4 gap-10 items-center border border-gray-200 rounded-xl bg-white shadow-xl">
       <h2 className="text-3xl text-slate-900 w-56 text-center mt-6">Adicionar novo item</h2>
-      <form action="" className="flex flex-col gap-10">
+      <form action="" className="flex flex-col w-full gap-10">
         <div className="flex flex-col gap-2 ">
           <label htmlFor="categoria" className="text-2xl text-slate-900 bg-white">Selecione a categoria:</label>
           <select value={categoria} onChange={handleSelectOption} id="categoria" className="focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent focus:ring-offset-2 border px-2 py-1 text-slate-600 bg-amber-50">

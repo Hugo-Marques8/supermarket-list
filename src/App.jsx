@@ -23,13 +23,13 @@ function App() {
     setTela('savedList')
   }
   return (
-    <div className="flex flex-col min-h-screen min-w-screen m-0 items-center gap-16 p-2 bg-gray-50">
+    <div className="flex flex-col min-h-screen w-full items-center gap-16 p-2 bg-gray-50">
       <header className="mt-4 text-center">
         <h1 className="text-slate-900 text-5xl uppercase leading-normal mt-4">
           Minha lista de compras
         </h1>
       </header>
-      <main className="flex flex-col flex-1">
+      <main className="flex flex-col flex-1 w-full items-center">
         {tela === "home" && (
           <div className="flex flex-col flex-1 items-center justify-around">
             <h2 className="text-3xl text-center leading-normal">Deseja criar uma nova lista?</h2>
